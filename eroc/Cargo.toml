@@ -1,0 +1,11 @@
+[package]
+name = "eroc"
+version = "0.0.0"
+edition = "2021"
+authors = [
+    "Viet-Hoa Do <doviethoa@doviethoa.com>",
+]
+license = "Apache-2.0"
+description = "A collection of libraries to extend the capability of the Rust standard library."
+repository = "https://github.com/radifun/eroc"
+readme = "../README.md"
