@@ -9,3 +9,8 @@ license = "Apache-2.0"
 description = "A collection of libraries to extend the capability of the Rust standard library."
 repository = "https://github.com/radifun/eroc"
 readme = "../README.md"
+
+publish = false
+
+[dependencies]
+eroc_io = { path = "../io" }

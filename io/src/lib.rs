@@ -16,4 +16,6 @@
 // limitations under the License.
 // =================================================================================================
 
-pub use eroc_io as io;
+mod error;
+
+pub use error::*;
