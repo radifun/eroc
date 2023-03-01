@@ -1,0 +1,3 @@
+[submodule "nostd"]
+	path = components/nostd
+	url = ../eroc-nostd
