@@ -22,12 +22,32 @@ use core::{fmt, result};
 // Result
 // =================================================================================================
 
+/// An alternative to [std::io::Result].
 pub type Result<T> = result::Result<T, Error>;
 
 // =================================================================================================
 // Error
 // =================================================================================================
 
+/// An alternative to [std::io::Error].
+///
+/// Incompatibility list:
+///   - [Error::new] always take `&'static str` as the error. No other type is permitted.
+///   - [core::fmt::Display] trait is implemented but [ErrorKind] is displayed using
+///     [core::fmt::Debug] trait.
+///   - The following functions are not available:
+///     - [std::io::Error::other]
+///     - [std::io::Error::last_os_error]
+///     - [std::io::Error::from_raw_os_error]
+///     - [std::io::Error::raw_os_error]
+///     - [std::io::Error::get_ref]
+///     - [std::io::Error::get_mut]
+///     - [std::io::Error::into_inner]
+///     - [std::io::Error::downcast]
+///   - The following traits are not implemented:
+///     - [core::error::Error]
+///     - [From]<[std::io::IntoInnerError]>
+///     - [From]<[std::ffi::NulError]>
 pub struct Error {
     data: ErrorData,
 }
@@ -112,5 +132,11 @@ impl SimpleMessage {
 // Error kind
 // =================================================================================================
 
+/// An alternative to [std::io::ErrorKind].
+///
+/// Incompatibility list:
+///   - The list of choices is incomplete.
+///   - The following traits are not implemented:
+///     - [core::fmt::Display]
 #[derive(Clone, Copy, Debug, PartialEq, PartialOrd, Eq, Ord, Hash)]
 pub enum ErrorKind {}
