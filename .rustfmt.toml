@@ -1,6 +1,5 @@
 unstable_features = true
 
-comment_width = 100  # Matching max_width. Default: 80
 group_imports = "StdExternalCrate"  # Default: Preserve
 hex_literal_case = "Lower"  # Default: Preserve
 imports_granularity = "Module"  # Default: Preserve
@@ -8,4 +7,3 @@ normalize_comments = true  # Default: false
 normalize_doc_attributes = true  # Default: false
 use_small_heuristics = "Max"  # Default: Default
 version = "Two"  # Default: One
-wrap_comments = true  # Default: false

@@ -1,5 +1,9 @@
 # Eroc
 
+[![Latest version](https://img.shields.io/crates/v/eroc.svg)](https://crates.io/crates/eroc)
+[![Documentation](https://docs.rs/eroc/badge.svg)](https://docs.rs/eroc)
+![License](https://img.shields.io/crates/l/eroc.svg)
+
 Eroc is a collection of libraries to extend the capability of the Rust standard library.
 Unlike the common practice in Rust world where each library provides a few certain features, Eroc follows the (somewhat outdated and undesirable) way by providing an extensive and high quality collection of functionalities all in one place.
 
@@ -12,7 +16,7 @@ Unlike the common practice in Rust world where each library provides a few certa
 
 Eroc consists of the following libraries:
 
-- `io`: an alternative to `std::io` module with `no_std` support.
+- [`microstd`](https://github.com/radifun/eroc_microstd): an alternative implementation of `std` library for `no_std` environment.
 
 ## License
 

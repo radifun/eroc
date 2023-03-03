@@ -1,3 +1,3 @@
-[submodule "nostd"]
-	path = components/nostd
-	url = ../eroc-nostd
+[submodule "microstd"]
+	path = components/microstd
+	url = ../eroc_microstd
