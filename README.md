@@ -4,7 +4,7 @@
 [![Documentation](https://docs.rs/eroc/badge.svg)](https://docs.rs/eroc)
 ![License](https://img.shields.io/crates/l/eroc.svg)
 
-Eroc is a collection of libraries to extend the capability of the Rust standard library.
+Eroc is a collection of libraries to extend the capability of Rust standard library.
 Unlike the common practice in Rust world where each library provides a few certain features, Eroc follows the (somewhat outdated and undesirable) way by providing an extensive and high quality collection of functionalities all in one place.
 
 > **Warning**:
